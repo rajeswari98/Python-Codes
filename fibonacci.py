@@ -16,3 +16,6 @@ def fib(num):
 num= int(input("Enter no.of terms to print: "))
 
 fib(num)
+'''
+fib
+'''

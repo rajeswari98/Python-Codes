@@ -5,5 +5,5 @@ print(l1+l2)
 Addition of two lists
 
 author:
-Sailesh Kumar Kurapati
+Sailesh Kumar
 '''

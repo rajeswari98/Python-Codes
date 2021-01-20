@@ -1,6 +1,6 @@
 num=int(input())
 l=list(map(int,input().split()))[0:num]
-for i in range(0,len(l)-1):
+for i in range(0,num-1):
     for j in range(i,len(l)):
         if ( (l[i]%10==l[j]%10) and (l[i]>l[j]) ):
             l[i],l[j]=l[j],l[i]

@@ -1,6 +1,6 @@
 count=1
 l=[]
-while count<99999:
+while count<99997779:
     k=input()
     if k=="q":
         break
@@ -54,7 +54,5 @@ output: if the number is less than zero then print invalid input because
  the kilometers should never be in negative
 
 Invalid Input
-
-
 
 '''

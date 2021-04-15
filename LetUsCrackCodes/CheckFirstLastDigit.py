@@ -1,7 +1,7 @@
 num=input()
 firstTwo=num[0:2]
 lastTwo=num[-2:]
-print( "yes" if firstTwo==lastTwo else "no" )
+#print( "yes" if firstTwo==lastTwo else "no" )
 
 
 

@@ -1,7 +1,11 @@
-string1=list(input().strip());l1=[];l2=[]
-string2=list(input().strip());x=0;y=0
+string1 = list(input().strip())
+l1 = []
+l2 = []
+string2 = list(input().strip())
+x = 0
+y = 0
 
-vow=['a','e','i','o','u']
+vow = ['a', 'e', 'i', 'o', 'u']
 for i in range(len(string1)):
     if string1[i] in vow:
         l1.append(string1[i])
@@ -9,20 +13,21 @@ for i in range(len(string2)):
     if string2[i] in vow:
         l2.append(string2[i])
 
-#print(string1,string2,l1,l2)
+# print(string1,string2,l1,l2)
 
-k=min(len(l1),len(l2))
+k = min(len(l1), len(l2))
 for i in range(len(string1)):
-    if string1[i] in vow and x<k:
-        string1[i]=l2[x]
-        x+=1
-    print(string1[i],end='')
+    if string1[i] in vow and x < k:
+        string1[i] = l2[x]
+        x += 1
+    print(string1[i], end='')
 print()
 for j in range(len(string2)):
-    if string2[j] in vow and y<k:
-        string2[j]=l1[y]
-        y+=1
-    print(string2[j],end='')
+    if string2[j] in vow and y < k:
+        string2[j] = l1[y]
+        y += 1
+    print(string2[j], end='')
+
 
 
 '''
@@ -45,7 +50,6 @@ for j in range(len(string2)):
     if string2[j] in vow and y<k:string2[j]=l1[y];y+=1
     print(string2[j],end='')
 '''
-
 
 
 '''

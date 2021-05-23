@@ -1,15 +1,14 @@
-num=list(input())
-l=[]
+num = list(input())
+l = []
 for n in num:
-    k=int(n)
-    if(k>=8):
+    k = int(n)
+    if(k >= 8):
         l.append('0')
-    if(k%2!=0 and k!=9):
+    if(k % 2 != 0 and k != 9):
         l.append(k+1)
-    elif(k%2==0 and k!=8):
+    elif(k % 2 == 0 and k != 8):
         l.append(k+2)
-print(*l,sep='')
-
+print(*l, sep='')
 
 
 '''
@@ -55,5 +54,3 @@ Input:
 Output:
 800
 '''
-
-    

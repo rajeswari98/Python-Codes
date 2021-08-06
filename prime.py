@@ -43,3 +43,26 @@ else:
         print("{} is not a prime number".format(num))
 '''
 
+'''
+another way
+
+num = int(input())
+if num==0:
+    print("enter a positive number")
+elif num==1 or num==2:
+    print("this is not a prime number")
+else:
+    prime=[]
+    counter=3
+    while (counter<=num):
+        flag=1
+        for i in range(3,counter,2):
+            if counter%i==0:
+                counter=counter+2
+                flag=0
+                break
+        if flag:
+            prime.append(counter)
+            counter=counter+2
+print(prime)
+'''

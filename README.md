@@ -11,3 +11,5 @@ git pull --pull latest changes ||
 git checkout branch_name ||
 git push  ||
 git clone https://github.com/Rajeshsingadi/Python-Codes.git ||
+
+change the git remote location using : git remote set-url origin https://github.com/Rajeshsingadi/NodeJSCodes.git

@@ -16,3 +16,12 @@ change the git remote location using : git remote set-url origin https://github.
 
 List your existing remotes in order to get the name of the remote you want to change. 
 $ git remote -v
+
+creating a branch from master
+git checkout -b develop
+
+
+stage
+ git add . 
+ commit 
+ push

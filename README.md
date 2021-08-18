@@ -13,3 +13,6 @@ git push  ||
 git clone https://github.com/Rajeshsingadi/Python-Codes.git ||
 
 change the git remote location using : git remote set-url origin https://github.com/Rajeshsingadi/NodeJSCodes.git
+
+List your existing remotes in order to get the name of the remote you want to change. 
+$ git remote -v

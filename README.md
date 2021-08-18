@@ -20,8 +20,6 @@ $ git remote -v
 creating a branch from master
 git checkout -b develop
 
-
-stage
- git add . 
- commit 
- push
+staging: git add . 
+ commiting:  git commit -m "Python codes" 
+ pushing: git push -u origin master

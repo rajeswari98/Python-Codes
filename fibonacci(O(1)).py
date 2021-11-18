@@ -1,3 +1,4 @@
+
 import math
 def fib(x):
     #we used formula for finding nth term of fibonacci series.
@@ -10,4 +11,5 @@ n=int(input("enter the no of terms "))
 for i in range(n):
     #end used for printing in single line
     print(fib(i),end=" ")
-        
+
+

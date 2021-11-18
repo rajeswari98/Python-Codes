@@ -66,3 +66,30 @@ else:
             counter=counter+2
 print(prime)
 '''
+
+'''
+start = int(input())
+k=[]
+count=0
+for i in range(2,start):
+    flag=0
+    for j in range(2,i):
+        if i%j ==0:
+            flag=1
+            break
+    else:
+        k.append(i)
+            
+print(k)      
+
+        
+'''
+
+'''
+startNum = int(input())
+endNum = int(input())
+
+for i in range(startNum, endNum):
+    if all(i%j!=0  for j in range(2,i)):
+        print(i)
+'''

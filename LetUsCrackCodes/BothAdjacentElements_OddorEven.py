@@ -1,5 +1,5 @@
 num=int(input())
-l=list(map(int,input().split()))
+l=list(map(int,input().split()))[:num]
 for n in range(1,num-1):
     if( (l[n-1]%2!=0 and l[n+1]%2!=0) or (l[n-1]%2==0 and l[n+1]%2==0)):
         print(l[n],end=' ') 

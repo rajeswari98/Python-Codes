@@ -1,4 +1,4 @@
-#arm strong number 407=4^3+0^3+7^3
+ 
 num = int(input("Enter any number: "))
 
 temp = num

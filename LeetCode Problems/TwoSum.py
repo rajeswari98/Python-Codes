@@ -1,25 +1,32 @@
-'''
-nums = [3, 3]
-target = 6
-k = []
-for i in range(len(nums)-1):
-    j = i+1
-    if nums[i]+nums[j] == target:
-        j = i+1
-        print("[{},{}]".format(i, j))
-'''
 # Solution:
 
+class Solution:
+    def twoSum(self, nums: list[int], target: int) -> list[int]:
+        for i in range(0, len(nums)):
+            for j in range(i+1,len(nums)):
+                if nums[i]+nums[j]==target:
+                    return [i,j]
+
+'''
 
 class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
-        k = []
-        for i in range(len(nums)-1):
-            j = i+1
-            if nums[i]+nums[j] == target:
-                j = i+1
-                # print("[{},{}]".format(i,j))
-                return i, j
+    def twoSum(self, nums: list[int], target: int) -> list[int]:
+        for x in nums:
+            #store the index of the first number and replace it with a non numerical character
+            #this so when we use "nums.index(target - x)" it gives us the next value rather than the first one
+            #for numbers that are the same such as [3,3]
+            firstnum= nums.index(x)
+            nums[firstnum] = "a"
+
+            if target-x in nums:
+                return [firstnum, nums.index(target-x)]
+       
+'''
+
+nums=list(map(int,input().split()))
+target = int(input())
+S = Solution()
+print(S.twoSum(nums,target))
 
 
 '''

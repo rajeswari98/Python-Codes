@@ -1,4 +1,3 @@
-'''
 num=int(input())
 
 for i in range(0,num):
@@ -18,7 +17,7 @@ for i in range(0,num):
     for l in range(num-i-1,1,-1):
         print("*",end="")
     print()
-'''
+
 '''
 5
     *

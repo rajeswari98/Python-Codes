@@ -6,5 +6,3 @@ k= list(permutations(name,num))
 for i in k:
     print(''.join(i))
 
-'''
-

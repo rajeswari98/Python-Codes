@@ -2,7 +2,7 @@
 Generators:
     Generators are iterators which can execute only once.
     It uses Yield Keyword.
-    It is used mostly in loops to generate an iterator vy returning all the values in the loop without effecting the iteration of the loop.
+    It is used mostly in loops to generate an iterator and returning all the values in the loop without effecting the iteration of the loop.
     Every genertor is an Iterator. Simply It is a subset of Iterators.
 
 Iterator:
@@ -11,7 +11,7 @@ Iterator:
     Iterator uses iter() and next() functions.
     Every iterator is not a generator.
 '''
-
+  
 #Generator
 print("This is a example for Generator")
 def sqr(n):

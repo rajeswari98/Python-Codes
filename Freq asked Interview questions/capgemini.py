@@ -47,7 +47,66 @@
 
 #Did you use any multi threading inside the project?
 
-
     
 
 
+
+
+# round  2
+# def sum1(a,b):
+#     return a+b
+
+# def diff(a,b):
+#     return a-b
+
+# a=3
+# b=2
+# sum_updated = sum1(a,b)
+# @sum1(a,b)
+# def ex(sum1, diff):
+#     print(sum1, diff)
+
+# # 'output of a and b is : '
+# def 
+
+def generate(l):
+    for i in range(l):
+        yield i
+   
+
+l=3
+x = generate(l)
+print(next(x))
+print(next(x))
+print(next(x))
+
+'''
+
+django-admin startproject 
+
+empid, salary
+
+models.py
+def employee(models.Model):
+    empid = models.CharField()
+    Salary = models.NumericField()
+    EMPSTATE = MODELS.CHARFIELD(NULL=True)
+    UNIVERSITY = MODELS.CHARFIELD()
+
+
+
+def example(models.Model):
+    order = models.ForeignKey(employee, on_delete=models.CASCADE,)
+
+PYTHON MANAGE.PY SHELL
+python manage.py makemigrations
+python manage.py migrate
+
+FORM
+{{SALARY}}
+
+def employee(request.get['empid'], request.get['salary']):
+
+    return render('templateName', {empid, salary })
+
+'''

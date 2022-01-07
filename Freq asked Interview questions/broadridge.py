@@ -74,4 +74,40 @@ def f():
             return i
 k = f()
 print(k)
-        
+    
+
+'''
+round 3
+employee: name, id
+employee details : id, age, address
+select e.name, ed.address from employee a, employee_details ed join a.id = ed.id where ed.age>=25; 
+
+database: orcale, 
+
+models.py
+employee, employee_details
+def employee(models.Model):
+	name = models.Charfield(max_length=20)
+	id = models.Interfield(max_length =10)
+def employee_details(models.Model):
+	address = models.Charfield(max_length=20)
+	id = models.Interfield(max_length =10)
+	name = models.Charfield(max_length=20)
+	age = models.Interfield(max_length =10)
+
+python manage.py makemigrations
+python manage.py migrate
+
+views.py
+import . models
+def employee(request):
+	if request.method == "POST":
+		name = employee.objects.get(name)
+	if name in employee.models:
+		print("Data exists")
+	else:
+		
+		
+
+
+'''

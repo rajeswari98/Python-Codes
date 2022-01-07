@@ -26,5 +26,5 @@ def fib(num):
     else: return fib(num-1) + fib(num-2)
 
 for i in range(num):
-    print(fib(i), end=' ')                          
+    print(fib(i), end=' ')                     
 '''

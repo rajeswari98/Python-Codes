@@ -1,4 +1,4 @@
-#swapping the variables
+# swapping the variables
 # def swap(a,b):
 #     a,b=b,a
 #     print(a,b)
@@ -31,10 +31,10 @@
 #         d[i]+=1
 #     else:
 #         d[i] = 1
-# print(d)
+# print(d) 
 
 s="up 1/1/1 to 1/1/44"
-# k=.split('to')
+# k=s.split('to')
 
 # print(s)
 

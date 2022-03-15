@@ -17,6 +17,7 @@ def prime_numbers(num):
 
 print(prime_numbers(num))
 
+
 '''
 num=int(input())
 c=3

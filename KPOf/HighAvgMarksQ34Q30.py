@@ -9,7 +9,6 @@ Explanation: Since Jessica's average is greater than Bob's, Mike's and Jason's a
 '''
 import math
 
-
 def maxAvgScore(scores):
     maxAvg = -math.inf
     if not scores:
@@ -19,9 +18,9 @@ def maxAvgScore(scores):
     for name, score in scores:
         if name not in grades:
             grades[name] = [0,0]
-        grades[name][0] += int(score)
+        grades[name][0] += float(score)
         grades[name][1] += 1
-    # print(grades, maxAvg)
+    # print(grades)
     
     for val in grades.values():
         maxAvg = max(maxAvg, val[0]//val[1])

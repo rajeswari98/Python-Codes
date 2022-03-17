@@ -16,7 +16,7 @@ def lengthOfCycle(arr, startIndex):
     n= len(arr)
     if startIndex<0 or startIndex>=n: return -1
     slow, fast = arr[startIndex], arr[startIndex]
-    if not (slow<n and fast<n and arr[fast]) < n: return -1
+    if not (slow<n and fast<n and arr[fast] < n): return -1
     count = 0
     while slow<n and fast<n and arr[fast]<n:
         slow = arr[slow]

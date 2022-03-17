@@ -12,7 +12,7 @@ def extractTime(nums: List[int]) ->str:
                 return "%d%d:%d%d" % i
         return -1
 
-nums = [1,2,3,4]
+nums = [1,2,3,4,5]
 print(extractTime(nums))
 
 '''

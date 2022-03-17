@@ -1,7 +1,7 @@
-s = 'UDDLRL'
+s = 'UDDLLRUUUDUURUDDUULLDRRRR'
 
 def Cor(s):
-    U, L, R, D, x, y = 0, 0, 0, 0, 0, 0
+    x, y = 0, 0
     for i in s:
         if i == 'U':
             y += 1

@@ -30,4 +30,4 @@ def maxAvgScore(scores):
 
 # scores = [("Bob","87"), ("Mike", "35"),("Bob", "52"), ("Jason","35"), ("Mike", "55"), ("Jessica", "99")]
 scores = [["Bob","100"], ["Charles", "30"],["Bob", "20"], ["Marie", "80"]]
-print(math.floor(maxAvgScore(scores)))
+print(maxAvgScore(scores))

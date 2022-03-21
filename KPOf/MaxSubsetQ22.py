@@ -1,10 +1,10 @@
 def max_sub(l):
     max_sum = 0
-    max_index = 0
+    val = 0
     for i in l:
-        max_index = max_index + i
-        max_index = max(max_index, 0)
-        max_sum = max(max_sum, max_index)
+        val = val + i
+        val = max(val, 0)
+        max_sum = max(max_sum, val)
     return max_sum
 arr=[1,-5, 6 , -10 ,9,-4,-7]
 print(max_sub(arr))

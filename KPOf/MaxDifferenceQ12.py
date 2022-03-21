@@ -5,8 +5,8 @@ def maxDifference(l):
             diffList.append(l[j]-l[i])
     return max(diffList)
 l = [1,2,6,4]
-maxDifference(l)
-
+res=maxDifference(l)
+print(res)
 
 # def maxDifference(l):
 #     res = l[1] - l[0]

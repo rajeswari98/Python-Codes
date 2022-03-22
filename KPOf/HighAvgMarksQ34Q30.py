@@ -7,10 +7,11 @@ Input:  [{"Bob","87"}, {"Mike", "35"},{"Bob", "52"}, {"Jason","35"}, {"Mike", "5
 Output: 99
 Explanation: Since Jessica's average is greater than Bob's, Mike's and Jason's average.
 '''
-import math
+# import math
 
 def maxAvgScore(scores):
-    maxAvg = -math.inf
+    # maxAvg = -math.inf
+    maxAvg = -1e9
     if not scores:
         return maxAvg
     grades = {}
@@ -20,7 +21,7 @@ def maxAvgScore(scores):
             grades[name] = [0,0]
         grades[name][0] += float(score)
         grades[name][1] += 1
-    # print(grades)
+    print(grades)
     
     for val in grades.values():
         maxAvg = max(maxAvg, val[0]//val[1])

@@ -5,14 +5,12 @@ def Cor(s):
     for i in s:
         if i == 'U':
             y += 1
-        elif i == 'R':
+        if i == 'R':
             x += 1
-        elif i == 'L':
+        if i == 'L':
             x -= 1
-        elif i == 'D':
+        if i == 'D':
             y -= 1
-        else:
-            continue
     return (x,y)
          
 print(Cor(s))

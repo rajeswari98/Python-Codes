@@ -8,14 +8,13 @@ Output: 99
 Explanation: Since Jessica's average is greater than Bob's, Mike's and Jason's average.
 '''
 # import math
-
+#Time complexity is O(N)
 def maxAvgScore(scores):
     # maxAvg = -math.inf
     maxAvg = -1e9
     if not scores:
-        return maxAvg
+        return 0
     grades = {}
-    
     for name, score in scores:
         if name not in grades:
             grades[name] = [0,0]

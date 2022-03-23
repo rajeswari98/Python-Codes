@@ -16,6 +16,7 @@
 
 
 #Method 2
+#Time complexity is O(N)
 def classPresident(arr, k):
     k = k-1
     indx = k

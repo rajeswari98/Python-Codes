@@ -1,4 +1,5 @@
 #Q28
+
 from typing import List
 from itertools import permutations
 
@@ -20,27 +21,19 @@ print(extractTime(nums))
 #Q38
 def timestamp(l):
     for part in l:
-        if part>2:
-            continue
+        if part>2: continue
         for part1 in l:
-            if part == part1:
-                continue
-            elif part==2 and part1>3:
-                continue
-            else:
-                hr.append(str(part)+str(part1))
+            if part == part1: continue
+            elif part==2 and part1>3: continue
+            else: hr.append(str(part)+str(part1))
     print(hr)
 
     for part in l:
-        if part>6:
-            continue
+        if part>6: continue
         for part1 in l:
-            if part == part1:
-                continue
-            elif part ==6 and part1>0:
-                continue
-            else:
-                mn.append(str(part)+str(part1))
+            if part == part1: continue
+            elif part ==6 and part1>0: continue
+            else: mn.append(str(part)+str(part1))
 
     print(mn)
 

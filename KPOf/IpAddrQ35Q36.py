@@ -1,23 +1,29 @@
 #Time complexity is O(N)
+
+#Method 1
+
 def ip_addr(arr):
     d = dict()
-    max_count = 0
     max_ip= []
     for i in arr:
         indexVal = i.index(" ")
         ip_list = i[:indexVal]
         if ip_list in d:
             d[ip_list] += 1
-            if d[ip_list] > max_count:
-                max_count = d[ip_list]
         else:
             d[ip_list] = 1
-        
-        for key,value in  d.items():
-            if value == max_count:
-                max_ip.append(key)
+    max_count = max(d.values())
+    for key,value in  d.items():
+        if value == max_count:
+            max_ip.append(key)
         
     return max_ip
+
+arr= ["10.10.10.1 BroXX yyyy ZZZ", "10.10.10.2 BroXXd zzz", "10.10.10.2 ddddd yyy ZZZ", "10.10.10.1 BroXX yyyy ZZZ"]
+res = ip_addr(arr)
+print(res)
+
+# Method2
 
 # def ip_addr(arr):
 #     d = dict()
@@ -40,10 +46,12 @@ def ip_addr(arr):
 #     return res
     
 
-arr= ["10.10.10.1 BroXX yyyy ZZZ", "10.10.10.1 BroXXd zzz", "10.10.10.2 ddddd yyy ZZZ", "10.10.10.1 BroXX yyyy ZZZ", "10.10.10.1 BroXX dsf ZZZ"]
-res = ip_addr(arr)
-print(res)
+# arr= ["10.10.10.1 BroXX yyyy ZZZ", "10.10.10.2 BroXXd zzz", "10.10.10.2 ddddd yyy ZZZ", "10.10.10.1 BroXX yyyy ZZZ"]
+# res = ip_addr(arr)
+# print(res)
 
+
+#Method 3
 # def ip_addr(arr):
 #     d = dict()
     

@@ -7,6 +7,7 @@ Input:  [{"Bob","87"}, {"Mike", "35"},{"Bob", "52"}, {"Jason","35"}, {"Mike", "5
 Output: 99
 Explanation: Since Jessica's average is greater than Bob's, Mike's and Jason's average.
 '''
+
 # import math
 #Time complexity is O(N)
 def maxAvgScore(scores):

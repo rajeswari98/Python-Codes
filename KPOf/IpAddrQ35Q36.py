@@ -4,24 +4,29 @@
 
 def ip_addr(arr):
     d = dict()
-    max_ip= []
+    maxipList= []
     for i in arr:
         indexVal = i.index(" ")
-        ip_list = i[:indexVal]
-        if ip_list in d:
-            d[ip_list] += 1
+        ipAddr = i[:indexVal]
+        if ipAddr in d:
+            d[ipAddr] += 1
         else:
-            d[ip_list] = 1
+            d[ipAddr] = 1
+    # print(d)
     max_count = max(d.values())
+    # print(max_count)
     for key,value in  d.items():
         if value == max_count:
-            max_ip.append(key)
+            maxipList.append(key)
         
-    return max_ip
+    return maxipList
 
 arr= ["10.10.10.1 BroXX yyyy ZZZ", "10.10.10.2 BroXXd zzz", "10.10.10.2 ddddd yyy ZZZ", "10.10.10.1 BroXX yyyy ZZZ"]
+# arr=["10.10.10.1 BroXX yyyy ZZZ", "10.10.10.2 BroXXd zzz","10.10.10.1 BroXX yyyy ZZZ", "10.10.10.2 BroXXd zzz", "10.10.10.2 ddddd yyy ZZZ", "10.10.10.1 BroXX yyyy ZZZ"]
 res = ip_addr(arr)
 print(res)
+
+
 
 # Method2
 
@@ -31,13 +36,13 @@ print(res)
 #     max_ip= []
 #     for i in arr:
 #         indexVal = i.index(" ")
-#         ip_list = i[:indexVal]
-#         if ip_list in d:
-#             d[ip_list] += 1
-#             if d[ip_list] > max_count:
-#                 max_count = d[ip_list]
+#         ipAddr = i[:indexVal]
+#         if ipAddr in d:
+#             d[ipAddr] += 1
+#             if d[ipAddr] > max_count:
+#                 max_count = d[ipAddr]
 #         else:
-#             d[ip_list] = 1
+#             d[ipAddr] = 1
 #     valmax = max(zip(d.values(), d.keys()))[0]
 #     keymax = max(zip(d.values(), d.keys()))[1]
 #     res=[]
@@ -78,5 +83,35 @@ print(res)
 #     return resIP
 
 # arr= ["10.10.10.1 BroXX yyyy ZZZ", "10.10.10.1 BroXXd zzz", "10.10.10.2 ddddd yyy ZZZ", "10.10.10.2 ddddd yyy ZZZ", "10.10.10.2 ddddd yyy ZZZ", "10.10.10.1 BroXX yyyy ZZZ", "10.10.10.1 BroXX dsf ZZZ"]
+# res = ip_addr(arr)
+# print(res)
+
+
+#Method 3 without using max in dictionaries
+
+# def ip_addr(arr):
+#     d = dict()
+#     maxipList= []
+#     for i in arr:
+#         indexVal = i.index(" ")
+#         ipAddr = i[:indexVal]
+#         if ipAddr in d:
+#             d[ipAddr] += 1
+#         else:
+#             d[ipAddr] = 1
+#     # print(d)
+
+#     max_count = 0
+#     for i in d.values():
+#         if max_count< i:
+#             max_count = i
+#     print(max_count)
+#     for key,value in  d.items():
+#         if value == max_count:
+#             maxipList.append(key)
+        
+#     return maxipList
+
+# arr= ["10.10.10.1 BroXX yyyy ZZZ", "10.10.10.2 BroXXd zzz","10.10.10.1 BroXX yyyy ZZZ"]
 # res = ip_addr(arr)
 # print(res)
